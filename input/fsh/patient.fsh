@@ -21,20 +21,21 @@ InstanceOf: MeinPatientenProfil
 Description: "Dies ist ein Beispielpatient."
 * birthDate = 1980-09-02
 * gender = #female
-* name[+]
+* name[officialName]
   * given[+] = "Simone"
   * given[+] = "Test"
   * family = "Heckmann"
-* name[+]
+* name[maidenName]
   * family = "Februar-Schulung" 
 * address
   * line = "Musterstr. 7"
   * postalCode = "1234567"  
   * city = "Musterhausen"
+  * extension[quadrant]
+    * valueCode = #alpha 
   * extension[planet]
     * valueString = "Erde"
-  * extension[quadrant]
-    * valueCode = #alpha  
+ 
 * maritalStatus = $marital#P "Polygamous"
 * extension[spezies].valueCodeableConcept = http://fhir.ufp/CodeSystem/species#VK "Vulcan"
 
@@ -42,6 +43,20 @@ Description: "Dies ist ein Beispielpatient."
 Profile: MeinPatientenProfil
 Parent: Patient
 Description: "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten."  
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = ""
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = ""
+* identifier ^slicing.ordered = false
+* identifier contains buergerNummer 1..1 MS and krankenversichertenNummer 0..1 MS
+* identifier[buergerNummer]
+  * system 1..1 MS
+  * system = "http://fhir.ufp/sid/ufp-citizen-id"
+  * value 1..1 MS
+* identifier[krankenversichertenNummer]
+  * system 1..1 MS
+  * system = "http://fhir.de/sid/gkv/kvid-10"
+  * value 1..1 MS
 * birthDate 0..1 MS 
   * ^short = "Geburtsdatum"
   * ^comment = "Ist ein Pflichtfeld weil..."
@@ -54,6 +69,20 @@ Description: "Die ist ein Patienten-Profil mit den Minimalanforderungen für Pat
 * extension contains MeineSpeziesExtension named spezies 1..* MS 
 * active 1.. MS 
 * active = true (exactly)
+* name ^slicing.discriminator.type = #value
+* name ^slicing.discriminator.path = "use"
+* name ^slicing.rules = #closed
+* name contains officialName 1..1 MS and maidenName 1..1 MS
+* name[officialName]
+  * given 1.. MS
+  * family 1.. MS
+  * use 1.. MS
+  * use = #official
+* name[maidenName]
+  * family 1.. MS
+  * use 1.. MS
+  * use = #maiden
+
 
 
 Extension: MeinePlanetExtension
