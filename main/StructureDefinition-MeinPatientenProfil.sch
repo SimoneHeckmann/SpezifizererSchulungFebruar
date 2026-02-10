@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:Patient</sch:title>
     <sch:rule context="f:Patient">
-      <sch:assert test="count(f:birthDate) &gt;= 1">birthDate: minimum cardinality of 'birthDate' is 1</sch:assert>
-      <sch:assert test="count(f:address) &gt;= 1">address: minimum cardinality of 'address' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension']) &gt;= 1">extension with URL = 'http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -22,6 +22,8 @@
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension']) &gt;= 1">extension with URL = 'http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension']) &lt;= 1">extension with URL = 'http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension']) &gt;= 1">extension with URL = 'http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension']) &lt;= 1">extension with URL = 'http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>

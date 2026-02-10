@@ -9,6 +9,20 @@
       "types": [
         "string"
       ]
+    },
+    {
+      "url": "http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension",
+      "title": "MeineQuadrantenExtension",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension",
+      "title": "MeineSpeziesExtension",
+      "types": [
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
@@ -26,6 +40,12 @@
   "usage": {
     "http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension": [
       "Patient.address"
+    ],
+    "http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension": [
+      "Patient.address"
+    ],
+    "http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension": [
+      "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"

@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "MeinQuadrantenCodeSystem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MeinQuadrantenCodeSystem</b></p><a name=\"MeinQuadrantenCodeSystem\"> </a><a name=\"hcMeinQuadrantenCodeSystem\"> </a><p>This  code system <code>http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alpha<a name=\"MeinQuadrantenCodeSystem-alpha\"> </a></td><td>Alpha-Quadrant</td><td>Der Alpha-Quadrant der Milchstraße</td></tr><tr><td style=\"white-space:nowrap\">beta<a name=\"MeinQuadrantenCodeSystem-beta\"> </a></td><td>Beta-Quadrant</td><td>Der Beta-Quadrant der Milchstraße</td></tr><tr><td style=\"white-space:nowrap\">gamma<a name=\"MeinQuadrantenCodeSystem-gamma\"> </a></td><td>Gamma-Quadrant</td><td>Der Gamma-Quadrant der Milchstraße</td></tr><tr><td style=\"white-space:nowrap\">delta<a name=\"MeinQuadrantenCodeSystem-delta\"> </a></td><td>Delta-Quadrant</td><td>Der Delta-Quadrant der Milchstraße</td></tr></table></div>"
+  },
+  "url" : "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem",
+  "version" : "0.0.1",
+  "name" : "MeinQuadrantenCodeSystem",
+  "status" : "draft",
+  "date" : "2026-02-10T10:57:19+00:00",
+  "publisher" : "Gefyra GmbH",
+  "contact" : [{
+    "name" : "Gefyra GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gefyra.info/"
+    }]
+  }],
+  "description" : "Terminologie zur Codierung der Quadranten der Milchstraße",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "alpha",
+    "display" : "Alpha-Quadrant",
+    "definition" : "Der Alpha-Quadrant der Milchstraße"
+  },
+  {
+    "code" : "beta",
+    "display" : "Beta-Quadrant",
+    "definition" : "Der Beta-Quadrant der Milchstraße"
+  },
+  {
+    "code" : "gamma",
+    "display" : "Gamma-Quadrant",
+    "definition" : "Der Gamma-Quadrant der Milchstraße"
+  },
+  {
+    "code" : "delta",
+    "display" : "Delta-Quadrant",
+    "definition" : "Der Delta-Quadrant der Milchstraße"
+  }]
+}

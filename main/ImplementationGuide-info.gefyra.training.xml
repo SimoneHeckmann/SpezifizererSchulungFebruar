@@ -9,7 +9,7 @@
   <version value="0.0.1"/>
   <name value="SchulungsIG"/>
   <status value="draft"/>
-  <date value="2026-02-10T08:26:21+00:00"/>
+  <date value="2026-02-10T10:57:19+00:00"/>
   <publisher value="Gefyra GmbH"/>
   <contact>
     <name value="Gefyra GmbH"/>
@@ -36,6 +36,11 @@
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
     <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="ufp_core">
+    <uri value="http://fhir.org/packages/ufp.core/ImplementationGuide/ufp.core"/>
+    <packageId value="ufp.core"/>
+    <version value="0.6.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -454,6 +459,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MeineQuadrantenExtension"/>
+      </reference>
+      <name value="MeineQuadrantenExtension"/>
+      <description value="Extension zur Angabe des Quadranten an einer Adresse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MeineSpeziesExtension"/>
+      </reference>
+      <name value="MeineSpeziesExtension"/>
+      <description value="Erweiterung zur Angabe der Spezies eines Patienten"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -461,6 +488,28 @@
       </reference>
       <name value="MeinPatientenProfil"/>
       <description value="Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/MeinQuadrantenCodeSystem"/>
+      </reference>
+      <name value="MeinQuadrantenCodeSystem"/>
+      <description value="Terminologie zur Codierung der Quadranten der Milchstraße"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/MeinQuadrantenValueSet"/>
+      </reference>
+      <name value="MeinQuadrantenValueSet"/>
+      <description value="Valueset zur Codierung der Quadranten der Milchstraße"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -509,6 +558,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="ChangeLog.html"/>
+        </extension>
+        <nameUrl value="ChangeLog.html"/>
+        <title value="Change Log"/>
         <generation value="markdown"/>
       </page>
     </page>

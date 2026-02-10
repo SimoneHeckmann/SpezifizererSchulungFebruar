@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "MeinQuadrantenValueSet",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet MeinQuadrantenValueSet</b></p><a name=\"MeinQuadrantenValueSet\"> </a><a name=\"hcMeinQuadrantenValueSet\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-MeinQuadrantenCodeSystem.html\"><code>http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.0.1</span></li></ul></div>"
+  },
+  "url" : "http://gefyra.info/simone/ValueSet/MeinQuadrantenValueSet",
+  "version" : "0.0.1",
+  "name" : "MeinQuadrantenValueSet",
+  "status" : "draft",
+  "date" : "2026-02-10T10:57:19+00:00",
+  "publisher" : "Gefyra GmbH",
+  "contact" : [{
+    "name" : "Gefyra GmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gefyra.info/"
+    }]
+  }],
+  "description" : "Valueset zur Codierung der Quadranten der Milchstraße",
+  "compose" : {
+    "include" : [{
+      "system" : "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem"
+    }]
+  }
+}

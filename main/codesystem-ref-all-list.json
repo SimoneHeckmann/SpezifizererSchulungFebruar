@@ -1,6 +1,28 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://fhir.ufp/CodeSystem/species",
+      "version" : null,
+      "status" : "draft",
+      "name" : "Species of the United Federation of Planets",
+      "title" : null,
+      "description" : "Species known to the United Federation of Planets",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=ufp.core@0.6.0&canonical=http://fhir.ufp/ValueSet/species" : "species"
+    },
+    {
+      "url" : "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "MeinQuadrantenCodeSystem",
+      "title" : null,
+      "description" : "Terminologie zur Codierung der Quadranten der Milchstraße",
+      "uses" : {
+      },
+      "ValueSet-MeinQuadrantenValueSet.html" : "MeinQuadrantenValueSet"
+    },
+    {
       "url" : "http://hl7.org/fhir/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -83,6 +105,17 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : null,
+      "status" : "draft",
+      "name" : "ietf-bcp-47",
+      "title" : null,
+      "description" : "Languages on planet Earth",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
     }
   ]
 }

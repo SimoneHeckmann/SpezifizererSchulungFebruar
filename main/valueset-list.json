@@ -1,3 +1,15 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "http://gefyra.info/simone/ValueSet/MeinQuadrantenValueSet",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "MeinQuadrantenValueSet",
+      "title" : null,
+      "description" : "Valueset zur Codierung der Quadranten der Milchstraße",
+      "systems" : [
+        "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem"
+      ]
+    }
+  ]
 }

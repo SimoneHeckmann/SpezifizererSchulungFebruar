@@ -20,7 +20,7 @@
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "SchulungsIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-10T08:26:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-10T10:57:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gefyra GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gefyra GmbH" ] ;
@@ -68,6 +68,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
      fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "ufp_core" ] ;
+     fhir:uri [
+       fhir:v "http://fhir.org/packages/ufp.core/ImplementationGuide/ufp.core"^^xsd:anyURI ;
+       fhir:l <http://fhir.org/packages/ufp.core/ImplementationGuide/ufp.core>
+     ] ;
+     fhir:packageId [ fhir:v "ufp.core" ] ;
+     fhir:version [ fhir:v "0.6.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1309,6 +1317,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/MeineQuadrantenExtension" ]
+       ] ;
+       fhir:name [ fhir:v "MeineQuadrantenExtension" ] ;
+       fhir:description [ fhir:v "Extension zur Angabe des Quadranten an einer Adresse" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/MeineSpeziesExtension" ]
+       ] ;
+       fhir:name [ fhir:v "MeineSpeziesExtension" ] ;
+       fhir:description [ fhir:v "Erweiterung zur Angabe der Spezies eines Patienten" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1318,6 +1368,48 @@
        ] ;
        fhir:name [ fhir:v "MeinPatientenProfil" ] ;
        fhir:description [ fhir:v "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem> ;
+         fhir:reference [ fhir:v "CodeSystem/MeinQuadrantenCodeSystem" ]
+       ] ;
+       fhir:name [ fhir:v "MeinQuadrantenCodeSystem" ] ;
+       fhir:description [ fhir:v "Terminologie zur Codierung der Quadranten der Milchstraße" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/ValueSet/MeinQuadrantenValueSet> ;
+         fhir:reference [ fhir:v "ValueSet/MeinQuadrantenValueSet" ]
+       ] ;
+       fhir:name [ fhir:v "MeinQuadrantenValueSet" ] ;
+       fhir:description [ fhir:v "Valueset zur Codierung der Quadranten der Milchstraße" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1425,6 +1517,25 @@
            fhir:l fhir:index.html
          ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "ChangeLog.html"^^xsd:anyURI ;
+             fhir:l fhir:ChangeLog.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "ChangeLog.html"^^xsd:anyURI ;
+           fhir:l fhir:ChangeLog.html
+         ] ;
+         fhir:title [ fhir:v "Change Log" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

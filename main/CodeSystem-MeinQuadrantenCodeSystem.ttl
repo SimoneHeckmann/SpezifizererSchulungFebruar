@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MeinQuadrantenCodeSystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem MeinQuadrantenCodeSystem</b></p><a name=\"MeinQuadrantenCodeSystem\"> </a><a name=\"hcMeinQuadrantenCodeSystem\"> </a><p>This  code system <code>http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alpha<a name=\"MeinQuadrantenCodeSystem-alpha\"> </a></td><td>Alpha-Quadrant</td><td>Der Alpha-Quadrant der Milchstraße</td></tr><tr><td style=\"white-space:nowrap\">beta<a name=\"MeinQuadrantenCodeSystem-beta\"> </a></td><td>Beta-Quadrant</td><td>Der Beta-Quadrant der Milchstraße</td></tr><tr><td style=\"white-space:nowrap\">gamma<a name=\"MeinQuadrantenCodeSystem-gamma\"> </a></td><td>Gamma-Quadrant</td><td>Der Gamma-Quadrant der Milchstraße</td></tr><tr><td style=\"white-space:nowrap\">delta<a name=\"MeinQuadrantenCodeSystem-delta\"> </a></td><td>Delta-Quadrant</td><td>Der Delta-Quadrant der Milchstraße</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem"^^xsd:anyURI ;
+     fhir:l <http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem>
+  ] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "MeinQuadrantenCodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-02-10T10:57:19+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gefyra GmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gefyra GmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gefyra.info/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Terminologie zur Codierung der Quadranten der Milchstraße"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "alpha" ] ;
+     fhir:display [ fhir:v "Alpha-Quadrant" ] ;
+     fhir:definition [ fhir:v "Der Alpha-Quadrant der Milchstraße" ]
+  ] [
+     fhir:code [ fhir:v "beta" ] ;
+     fhir:display [ fhir:v "Beta-Quadrant" ] ;
+     fhir:definition [ fhir:v "Der Beta-Quadrant der Milchstraße" ]
+  ] [
+     fhir:code [ fhir:v "gamma" ] ;
+     fhir:display [ fhir:v "Gamma-Quadrant" ] ;
+     fhir:definition [ fhir:v "Der Gamma-Quadrant der Milchstraße" ]
+  ] [
+     fhir:code [ fhir:v "delta" ] ;
+     fhir:display [ fhir:v "Delta-Quadrant" ] ;
+     fhir:definition [ fhir:v "Der Delta-Quadrant der Milchstraße" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

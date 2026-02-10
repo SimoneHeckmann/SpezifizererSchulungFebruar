@@ -6,8 +6,18 @@
     <profile value="http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient PatientBeispiel</b></p><a name="PatientBeispiel"> </a><a name="hcPatientBeispiel"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MeinPatientenProfil.html">MeinPatientenProfil</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Simone Test Heckmann  Female, DoB: 1980-09-02</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Februar-Schulung </td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">Musterstr. 7 Musterhausen 1234567 </td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient PatientBeispiel</b></p><a name="PatientBeispiel"> </a><a name="hcPatientBeispiel"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MeinPatientenProfil.html">MeinPatientenProfil</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Simone Test Heckmann  Female, DoB: 1980-09-02</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus P}">Polygamous</span></td></tr><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Februar-Schulung </td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">Musterstr. 7 Musterhausen 1234567 </td></tr><tr><td style="background-color: #f3f5da" title="Erweiterung zur Angabe der Spezies eines Patienten"><a href="StructureDefinition-MeineSpeziesExtension.html"/></td><td colspan="3"><span title="Codes:{http://fhir.ufp/CodeSystem/species VK}">Vulcan</span></td></tr></table></div>
   </text>
+  <extension url="http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.ufp/CodeSystem/species"/>
+        <code value="VK"/>
+        <display value="Vulcan"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <active value="true"/>
   <name>
     <family value="Heckmann"/>
     <given value="Simone"/>
@@ -22,8 +32,18 @@
     <extension url="http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension">
       <valueString value="Erde"/>
     </extension>
+    <extension url="http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension">
+      <valueCode value="alpha"/>
+    </extension>
     <line value="Musterstr. 7"/>
     <city value="Musterhausen"/>
     <postalCode value="1234567"/>
   </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="P"/>
+      <display value="Polygamous"/>
+    </coding>
+  </maritalStatus>
 </Patient>

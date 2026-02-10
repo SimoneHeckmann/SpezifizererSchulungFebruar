@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MeinQuadrantenCodeSystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem MeinQuadrantenCodeSystem</b></p><a name="MeinQuadrantenCodeSystem"> </a><a name="hcMeinQuadrantenCodeSystem"> </a><p>This  code system <code>http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">alpha<a name="MeinQuadrantenCodeSystem-alpha"> </a></td><td>Alpha-Quadrant</td><td>Der Alpha-Quadrant der Milchstraße</td></tr><tr><td style="white-space:nowrap">beta<a name="MeinQuadrantenCodeSystem-beta"> </a></td><td>Beta-Quadrant</td><td>Der Beta-Quadrant der Milchstraße</td></tr><tr><td style="white-space:nowrap">gamma<a name="MeinQuadrantenCodeSystem-gamma"> </a></td><td>Gamma-Quadrant</td><td>Der Gamma-Quadrant der Milchstraße</td></tr><tr><td style="white-space:nowrap">delta<a name="MeinQuadrantenCodeSystem-delta"> </a></td><td>Delta-Quadrant</td><td>Der Delta-Quadrant der Milchstraße</td></tr></table></div>
+  </text>
+  <url value="http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem"/>
+  <version value="0.0.1"/>
+  <name value="MeinQuadrantenCodeSystem"/>
+  <status value="draft"/>
+  <date value="2026-02-10T10:57:19+00:00"/>
+  <publisher value="Gefyra GmbH"/>
+  <contact>
+    <name value="Gefyra GmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gefyra.info/"/>
+    </telecom>
+  </contact>
+  <description value="Terminologie zur Codierung der Quadranten der Milchstraße"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="alpha"/>
+    <display value="Alpha-Quadrant"/>
+    <definition value="Der Alpha-Quadrant der Milchstraße"/>
+  </concept>
+  <concept>
+    <code value="beta"/>
+    <display value="Beta-Quadrant"/>
+    <definition value="Der Beta-Quadrant der Milchstraße"/>
+  </concept>
+  <concept>
+    <code value="gamma"/>
+    <display value="Gamma-Quadrant"/>
+    <definition value="Der Gamma-Quadrant der Milchstraße"/>
+  </concept>
+  <concept>
+    <code value="delta"/>
+    <display value="Delta-Quadrant"/>
+    <definition value="Der Delta-Quadrant der Milchstraße"/>
+  </concept>
+</CodeSystem>

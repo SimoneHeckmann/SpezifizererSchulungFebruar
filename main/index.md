@@ -26,7 +26,7 @@ Feel free to modify this index page with your own awesome content!
   "version" : "0.0.1",
   "name" : "SchulungsIG",
   "status" : "draft",
-  "date" : "2026-02-10T08:26:21+00:00",
+  "date" : "2026-02-10T10:57:19+00:00",
   "publisher" : "Gefyra GmbH",
   "contact" : [
     {
@@ -66,6 +66,12 @@ Feel free to modify this index page with your own awesome content!
       "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
       "packageId" : "hl7.fhir.uv.extensions.r4",
       "version" : "5.2.0"
+    },
+    {
+      "id" : "ufp_core",
+      "uri" : "http://fhir.org/packages/ufp.core/ImplementationGuide/ufp.core",
+      "packageId" : "ufp.core",
+      "version" : "0.6.0"
     }
   ],
   "definition" : {
@@ -744,6 +750,34 @@ Feel free to modify this index page with your own awesome content!
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/MeineQuadrantenExtension"
+        },
+        "name" : "MeineQuadrantenExtension",
+        "description" : "Extension zur Angabe des Quadranten an einer Adresse",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/MeineSpeziesExtension"
+        },
+        "name" : "MeineSpeziesExtension",
+        "description" : "Erweiterung zur Angabe der Spezies eines Patienten",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -752,6 +786,34 @@ Feel free to modify this index page with your own awesome content!
         },
         "name" : "MeinPatientenProfil",
         "description" : "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "CodeSystem"
+          }
+        ],
+        "reference" : {
+          "reference" : "CodeSystem/MeinQuadrantenCodeSystem"
+        },
+        "name" : "MeinQuadrantenCodeSystem",
+        "description" : "Terminologie zur Codierung der Quadranten der Milchstraße",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "ValueSet"
+          }
+        ],
+        "reference" : {
+          "reference" : "ValueSet/MeinQuadrantenValueSet"
+        },
+        "name" : "MeinQuadrantenValueSet",
+        "description" : "Valueset zur Codierung der Quadranten der Milchstraße",
         "exampleBoolean" : false
       },
       {
@@ -817,6 +879,17 @@ Feel free to modify this index page with your own awesome content!
           ],
           "nameUrl" : "index.html",
           "title" : "Home",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "ChangeLog.html"
+            }
+          ],
+          "nameUrl" : "ChangeLog.html",
+          "title" : "Change Log",
           "generation" : "markdown"
         }
       ]

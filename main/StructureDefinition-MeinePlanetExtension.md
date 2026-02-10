@@ -46,7 +46,7 @@ Other representations of profile: [CSV](StructureDefinition-MeinePlanetExtension
   "version" : "0.0.1",
   "name" : "MeinePlanetExtension",
   "status" : "draft",
-  "date" : "2026-02-10T08:26:21+00:00",
+  "date" : "2026-02-10T10:57:19+00:00",
   "publisher" : "Gefyra GmbH",
   "contact" : [
     {

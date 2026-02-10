@@ -4,8 +4,17 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
+* [Change Log](ChangeLog.md)
 
 ## Resources
+
+### CodeSystems
+
+* [MeinQuadrantenCodeSystem](CodeSystem-MeinQuadrantenCodeSystem.md)
+
+### ValueSets
+
+* [MeinQuadrantenValueSet](ValueSet-MeinQuadrantenValueSet.md)
 
 ### Resource Profiles
 
@@ -15,6 +24,8 @@
 ### Extensions
 
 * [MeinePlanetExtension](StructureDefinition-MeinePlanetExtension.md)
+* [MeineQuadrantenExtension](StructureDefinition-MeineQuadrantenExtension.md)
+* [MeineSpeziesExtension](StructureDefinition-MeineSpeziesExtension.md)
 
 ### ImplementationGuides
 

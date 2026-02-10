@@ -23,6 +23,24 @@ These define constraints on FHIR data types for systems conforming to this imple
 | | |
 | :--- | :--- |
 | [MeinePlanetExtension](StructureDefinition-MeinePlanetExtension.md) | Dies ist eine Extension, um Angaben zum Planeten an eine Adresse hinzuzufügen |
+| [MeineQuadrantenExtension](StructureDefinition-MeineQuadrantenExtension.md) | Extension zur Angabe des Quadranten an einer Adresse |
+| [MeineSpeziesExtension](StructureDefinition-MeineSpeziesExtension.md) | Erweiterung zur Angabe der Spezies eines Patienten |
+
+### Terminology: Value Sets 
+
+These define sets of codes used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [MeinQuadrantenValueSet](ValueSet-MeinQuadrantenValueSet.md) | Valueset zur Codierung der Quadranten der Milchstraße |
+
+### Terminology: Code Systems 
+
+These define new code systems used by systems conforming to this implementation guide.
+
+| | |
+| :--- | :--- |
+| [MeinQuadrantenCodeSystem](CodeSystem-MeinQuadrantenCodeSystem.md) | Terminologie zur Codierung der Quadranten der Milchstraße |
 
 ### Example: Example Instances 
 

@@ -1,6 +1,32 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://fhir.ufp/ValueSet/species",
+      "version" : null,
+      "status" : "draft",
+      "name" : "species",
+      "title" : null,
+      "description" : "Species known to the United Federation of Planets",
+      "systems" : ["http://fhir.ufp/CodeSystem/species"],
+      "uses" : {
+      },
+      "StructureDefinition-MeineSpeziesExtension.html" : "MeineSpeziesExtension"
+    },
+    {
+      "url" : "http://gefyra.info/simone/ValueSet/MeinQuadrantenValueSet",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "MeinQuadrantenValueSet",
+      "title" : null,
+      "description" : "Valueset zur Codierung der Quadranten der Milchstraße",
+      "systems" : [
+        "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MeineQuadrantenExtension.html" : "MeineQuadrantenExtension"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/address-type",
       "version" : "4.0.1",
       "status" : "active",

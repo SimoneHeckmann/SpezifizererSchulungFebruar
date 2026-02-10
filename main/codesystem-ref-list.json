@@ -1,3 +1,26 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.ufp/CodeSystem/species",
+      "version" : null,
+      "status" : "draft",
+      "name" : "Species of the United Federation of Planets",
+      "title" : null,
+      "description" : "Species known to the United Federation of Planets",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=ufp.core@0.6.0&canonical=http://fhir.ufp/ValueSet/species" : "species"
+    },
+    {
+      "url" : "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "MeinQuadrantenCodeSystem",
+      "title" : null,
+      "description" : "Terminologie zur Codierung der Quadranten der Milchstraße",
+      "uses" : {
+      },
+      "ValueSet-MeinQuadrantenValueSet.html" : "MeinQuadrantenValueSet"
+    }
+  ]
 }

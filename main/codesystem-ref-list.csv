@@ -1,1 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
+http://fhir.ufp/CodeSystem/species,null,draft,,Species of the United Federation of Planets,,"Species known to the United Federation of Planets","ValueSet/ad18d1cd-0064-4203-99e1-da3ddc2d6ea1"
+http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem,0.0.1,draft,,MeinQuadrantenCodeSystem,,"Terminologie zur Codierung der Quadranten der Milchstraße","ValueSet/MeinQuadrantenValueSet"

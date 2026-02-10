@@ -1,5 +1,12 @@
 [
   {
+    "id" : "MeinQuadrantenCodeSystem",
+    "type" : "CodeSystem",
+    "url" : "http://gefyra.info/simone/CodeSystem/MeinQuadrantenCodeSystem",
+    "version" : "0.0.1",
+    "name" : "MeinQuadrantenCodeSystem"
+  },
+  {
     "id" : "info.gefyra.training",
     "type" : "ImplementationGuide",
     "url" : "http://gefyra.info/simone/ImplementationGuide/info.gefyra.training",
@@ -21,10 +28,31 @@
     "name" : "MeinePlanetExtension"
   },
   {
+    "id" : "MeineQuadrantenExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://gefyra.info/simone/StructureDefinition/MeineQuadrantenExtension",
+    "version" : "0.0.1",
+    "name" : "MeineQuadrantenExtension"
+  },
+  {
+    "id" : "MeineSpeziesExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://gefyra.info/simone/StructureDefinition/MeineSpeziesExtension",
+    "version" : "0.0.1",
+    "name" : "MeineSpeziesExtension"
+  },
+  {
     "id" : "MyPatient",
     "type" : "StructureDefinition",
     "url" : "http://gefyra.info/simone/StructureDefinition/MyPatient",
     "version" : "0.0.1",
     "name" : "MyPatient"
+  },
+  {
+    "id" : "MeinQuadrantenValueSet",
+    "type" : "ValueSet",
+    "url" : "http://gefyra.info/simone/ValueSet/MeinQuadrantenValueSet",
+    "version" : "0.0.1",
+    "name" : "MeinQuadrantenValueSet"
   }
 ]
