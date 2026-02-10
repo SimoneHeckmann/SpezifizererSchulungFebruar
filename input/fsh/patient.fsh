@@ -19,6 +19,8 @@ Description: "An example of a patient with a license to krill."
 Instance: PatientBeispiel
 InstanceOf: MeinPatientenProfil
 Description: "Dies ist ein Beispielpatient."
+* identifier[buergerNummer].value = "32476eurg23457846rertreeruz547854675"
+* identifier[krankenversichertenNummer].value = "A123123123xxx"
 * birthDate = 1980-09-02
 * gender = #female
 * name[officialName]
@@ -43,23 +45,27 @@ Description: "Dies ist ein Beispielpatient."
 Profile: MeinPatientenProfil
 Parent: Patient
 Description: "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten."  
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = ""
+* insert Autoren
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "$this"
 * identifier ^slicing.rules = #open
-* identifier ^slicing.description = ""
 * identifier ^slicing.ordered = false
-* identifier contains buergerNummer 1..1 MS and krankenversichertenNummer 0..1 MS
-* identifier[buergerNummer]
+* identifier contains buergerNummer 1..1 MS and krankenversichertenNummer 0..1 MS and einrichtungsspezifisch 0..1 MS
+* identifier[buergerNummer] ^patternIdentifier.system = "http://fhir.ufp/sid/ufp-citizen-id"
+  * ^short = "Eindeutige, galaxieweite Bürgernummer"
   * system 1..1 MS
-  * system = "http://fhir.ufp/sid/ufp-citizen-id"
   * value 1..1 MS
-* identifier[krankenversichertenNummer]
+* identifier[krankenversichertenNummer] ^patternIdentifier.system = "http://fhir.de/sid/gkv/kvid-10"
   * system 1..1 MS
-  * system = "http://fhir.de/sid/gkv/kvid-10"
+  * value 1..1 MS
+  * value obeys KVNRPruefen
+* identifier[einrichtungsspezifisch] ^patternIdentifier.type.coding.code = #MR
   * value 1..1 MS
 * birthDate 0..1 MS 
   * ^short = "Geburtsdatum"
   * ^comment = "Ist ein Pflichtfeld weil..."
+* address only MeinAddressProfil  
+* contact.address only MeinAddressProfil
 * address 0.. MS
   * line 1.. MS
   * city MS
@@ -83,19 +89,28 @@ Description: "Die ist ein Patienten-Profil mit den Minimalanforderungen für Pat
   * use 1.. MS
   * use = #maiden
 
+Invariant: KVNRPruefen
+Description: "Die Versichertennummer muss 10-stellig sein, mit einem Großbuchstaben beginnen, gefolgt von 9 Zahlen"
+Expression: "matches('^[A-Z][0-9]{9}$')"
+Severity: #error
+
+
 
 
 Extension: MeinePlanetExtension
 Description: "Dies ist eine Extension, um Angaben zum Planeten an eine Adresse hinzuzufügen"
+* insert Autoren
 * value[x] only string
 
 Extension: MeineSpeziesExtension
 Description: "Erweiterung zur Angabe der Spezies eines Patienten"
+* insert Autoren
 * value[x] only CodeableConcept
 * value[x] from http://fhir.ufp/ValueSet/species (required)
 
 CodeSystem: MeinQuadrantenCodeSystem
 Description: "Terminologie zur Codierung der Quadranten der Milchstraße"
+* insert Autoren
 * #alpha "Alpha-Quadrant" "Der Alpha-Quadrant der Milchstraße"
 * #beta "Beta-Quadrant" "Der Beta-Quadrant der Milchstraße"
 * #gamma "Gamma-Quadrant" "Der Gamma-Quadrant der Milchstraße"
@@ -103,14 +118,21 @@ Description: "Terminologie zur Codierung der Quadranten der Milchstraße"
 
 ValueSet: MeinQuadrantenValueSet
 Description: "Valueset zur Codierung der Quadranten der Milchstraße"
+* insert Autoren
 * include codes from system MeinQuadrantenCodeSystem
 
 Extension: MeineQuadrantenExtension
 Description: "Extension zur Angabe des Quadranten an einer Adresse"
+* insert Autoren
 * ^context.type = #element
-* ^context.expression = "Address"
+* ^context.expression = "Patient.address"
 * value[x] only code
 * value[x] from MeinQuadrantenValueSet (required)
 
-
-   
+RuleSet: Autoren
+* ^contact[+].name = "Simone Heckmann"
+* ^contact[=].telecom.system = #phone
+* ^contact[=].telecom.value = "1234235345-3456"
+* ^contact[+].name = "Gefyra GmbH"
+* ^contact[=].telecom.system = #url
+* ^contact[=].telecom.value = "https://gefyra.de"
