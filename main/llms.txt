@@ -1,4 +1,4 @@
-# info.gefyra.training#0.1.0: null
+# info.gefyra.training#0.0.1: null
 
 ## Pages
 
@@ -9,7 +9,12 @@
 
 ### Resource Profiles
 
+* [MeinPatientenProfil](StructureDefinition-MeinPatientenProfil.md)
 * [MyPatient](StructureDefinition-MyPatient.md)
+
+### Extensions
+
+* [MeinePlanetExtension](StructureDefinition-MeinePlanetExtension.md)
 
 ### ImplementationGuides
 
@@ -17,4 +22,5 @@
 
 ### Examples
 
+* [PatientBeispiel (Patient)](Patient-PatientBeispiel.md)
 * [PatientExample (Patient)](Patient-PatientExample.md)

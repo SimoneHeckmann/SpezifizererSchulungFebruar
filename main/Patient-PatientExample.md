@@ -1,4 +1,4 @@
-# PatientExample - v0.1.0
+# PatientExample - v0.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -21,7 +21,7 @@ James Pond (no stated gender), DoB Unknown
   "resourceType" : "Patient",
   "id" : "PatientExample",
   "meta" : {
-    "profile" : ["http://gefyra.info/training/StructureDefinition/MyPatient"]
+    "profile" : ["http://gefyra.info/simone/StructureDefinition/MyPatient"]
   },
   "name" : [
     {

@@ -3,13 +3,13 @@
   "id" : "info.gefyra.training",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide info.gefyra.training</b></p><a name=\"info.gefyra.training\"> </a><a name=\"hcinfo.gefyra.training\"> </a><h2>SchulungsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://gefyra.info/training/ImplementationGuide/info.gefyra.training</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide info.gefyra.training</b></p><a name=\"info.gefyra.training\"> </a><a name=\"hcinfo.gefyra.training\"> </a><h2>SchulungsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://gefyra.info/simone/ImplementationGuide/info.gefyra.training</pre></div>"
   },
-  "url" : "http://gefyra.info/training/ImplementationGuide/info.gefyra.training",
-  "version" : "0.1.0",
+  "url" : "http://gefyra.info/simone/ImplementationGuide/info.gefyra.training",
+  "version" : "0.0.1",
   "name" : "SchulungsIG",
   "status" : "draft",
-  "date" : "2026-02-09T13:05:27+00:00",
+  "date" : "2026-02-10T08:26:21+00:00",
   "publisher" : "Gefyra GmbH",
   "contact" : [{
     "name" : "Gefyra GmbH",
@@ -148,7 +148,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://gefyra.info/training/history.html"
+        "valueString" : "http://gefyra.info/simone/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -427,7 +427,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://gefyra.info/training/history.html"
+        "valueString" : "http://gefyra.info/simone/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -599,6 +599,30 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MeinePlanetExtension"
+      },
+      "name" : "MeinePlanetExtension",
+      "description" : "Dies ist eine Extension, um Angaben zum Planeten an eine Adresse hinzuzufügen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MeinPatientenProfil"
+      },
+      "name" : "MeinPatientenProfil",
+      "description" : "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -614,11 +638,23 @@
         "valueString" : "Patient"
       }],
       "reference" : {
+        "reference" : "Patient/PatientBeispiel"
+      },
+      "name" : "PatientBeispiel",
+      "description" : "Dies ist ein Beispielpatient.",
+      "exampleCanonical" : "http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
         "reference" : "Patient/PatientExample"
       },
       "name" : "PatientExample",
       "description" : "An example of a patient with a license to krill.",
-      "exampleCanonical" : "http://gefyra.info/training/StructureDefinition/MyPatient"
+      "exampleCanonical" : "http://gefyra.info/simone/StructureDefinition/MyPatient"
     }],
     "page" : {
       "extension" : [{

@@ -2,15 +2,29 @@
   {
     "id" : "info.gefyra.training",
     "type" : "ImplementationGuide",
-    "url" : "http://gefyra.info/training/ImplementationGuide/info.gefyra.training",
-    "version" : "0.1.0",
+    "url" : "http://gefyra.info/simone/ImplementationGuide/info.gefyra.training",
+    "version" : "0.0.1",
     "name" : "SchulungsIG"
+  },
+  {
+    "id" : "MeinPatientenProfil",
+    "type" : "StructureDefinition",
+    "url" : "http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil",
+    "version" : "0.0.1",
+    "name" : "MeinPatientenProfil"
+  },
+  {
+    "id" : "MeinePlanetExtension",
+    "type" : "StructureDefinition",
+    "url" : "http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension",
+    "version" : "0.0.1",
+    "name" : "MeinePlanetExtension"
   },
   {
     "id" : "MyPatient",
     "type" : "StructureDefinition",
-    "url" : "http://gefyra.info/training/StructureDefinition/MyPatient",
-    "version" : "0.1.0",
+    "url" : "http://gefyra.info/simone/StructureDefinition/MyPatient",
+    "version" : "0.0.1",
     "name" : "MyPatient"
   }
 ]

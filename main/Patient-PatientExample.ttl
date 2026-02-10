@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://gefyra.info/training/Patient/PatientExample> a fhir:Patient ;
+<http://gefyra.info/simone/Patient/PatientExample> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PatientExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://gefyra.info/training/StructureDefinition/MyPatient"^^xsd:anyURI ;
-       fhir:l <http://gefyra.info/training/StructureDefinition/MyPatient>
+       fhir:v "http://gefyra.info/simone/StructureDefinition/MyPatient"^^xsd:anyURI ;
+       fhir:l <http://gefyra.info/simone/StructureDefinition/MyPatient>
      ] )
   ] ; # 
   fhir:text [

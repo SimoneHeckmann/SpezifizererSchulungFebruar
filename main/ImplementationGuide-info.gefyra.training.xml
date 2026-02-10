@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="info.gefyra.training"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide info.gefyra.training</b></p><a name="info.gefyra.training"> </a><a name="hcinfo.gefyra.training"> </a><h2>SchulungsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://gefyra.info/training/ImplementationGuide/info.gefyra.training</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide info.gefyra.training</b></p><a name="info.gefyra.training"> </a><a name="hcinfo.gefyra.training"> </a><h2>SchulungsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://gefyra.info/simone/ImplementationGuide/info.gefyra.training</pre></div>
   </text>
-  <url value="http://gefyra.info/training/ImplementationGuide/info.gefyra.training"/>
-  <version value="0.1.0"/>
+  <url value="http://gefyra.info/simone/ImplementationGuide/info.gefyra.training"/>
+  <version value="0.0.1"/>
   <name value="SchulungsIG"/>
   <status value="draft"/>
-  <date value="2026-02-09T13:05:27+00:00"/>
+  <date value="2026-02-10T08:26:21+00:00"/>
   <publisher value="Gefyra GmbH"/>
   <contact>
     <name value="Gefyra GmbH"/>
@@ -115,7 +115,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://gefyra.info/training/history.html"/>
+        <valueString value="http://gefyra.info/simone/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -318,7 +318,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://gefyra.info/training/history.html"/>
+        <valueString value="http://gefyra.info/simone/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -443,6 +443,28 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MeinePlanetExtension"/>
+      </reference>
+      <name value="MeinePlanetExtension"/>
+      <description value="Dies ist eine Extension, um Angaben zum Planeten an eine Adresse hinzuzufügen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MeinPatientenProfil"/>
+      </reference>
+      <name value="MeinPatientenProfil"/>
+      <description value="Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -457,11 +479,22 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
+        <reference value="Patient/PatientBeispiel"/>
+      </reference>
+      <name value="PatientBeispiel"/>
+      <description value="Dies ist ein Beispielpatient."/>
+      <exampleCanonical value="http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
         <reference value="Patient/PatientExample"/>
       </reference>
       <name value="PatientExample"/>
       <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="http://gefyra.info/training/StructureDefinition/MyPatient"/>
+      <exampleCanonical value="http://gefyra.info/simone/StructureDefinition/MyPatient"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

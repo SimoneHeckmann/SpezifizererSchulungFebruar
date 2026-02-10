@@ -1,17 +1,32 @@
 {
   "package": "info.gefyra.training",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension",
+      "title": "MeinePlanetExtension",
+      "types": [
+        "string"
+      ]
+    }
+  ],
   "profiles": {
     "Patient": [
       {
-        "url": "http://gefyra.info/training/StructureDefinition/MyPatient",
+        "url": "http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil",
+        "title": "MeinPatientenProfil"
+      },
+      {
+        "url": "http://gefyra.info/simone/StructureDefinition/MyPatient",
         "title": "MyPatient"
       }
     ]
   },
   "usage": {
+    "http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension": [
+      "Patient.address"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],

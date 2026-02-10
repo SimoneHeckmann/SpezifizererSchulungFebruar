@@ -6,21 +6,21 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://gefyra.info/training/ImplementationGuide/info.gefyra.training> a fhir:ImplementationGuide ;
+<http://gefyra.info/simone/ImplementationGuide/info.gefyra.training> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "info.gefyra.training"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide info.gefyra.training</b></p><a name=\"info.gefyra.training\"> </a><a name=\"hcinfo.gefyra.training\"> </a><h2>SchulungsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://gefyra.info/training/ImplementationGuide/info.gefyra.training</pre></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide info.gefyra.training</b></p><a name=\"info.gefyra.training\"> </a><a name=\"hcinfo.gefyra.training\"> </a><h2>SchulungsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://gefyra.info/simone/ImplementationGuide/info.gefyra.training</pre></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "http://gefyra.info/training/ImplementationGuide/info.gefyra.training"^^xsd:anyURI ;
-     fhir:l <http://gefyra.info/training/ImplementationGuide/info.gefyra.training>
+     fhir:v "http://gefyra.info/simone/ImplementationGuide/info.gefyra.training"^^xsd:anyURI ;
+     fhir:l <http://gefyra.info/simone/ImplementationGuide/info.gefyra.training>
   ] ; # 
-  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "SchulungsIG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-09T13:05:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-02-10T08:26:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gefyra GmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gefyra GmbH" ] ;
@@ -303,7 +303,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "http://gefyra.info/training/history.html"
+           fhir:v "http://gefyra.info/simone/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -912,7 +912,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "http://gefyra.info/training/history.html"
+           fhir:v "http://gefyra.info/simone/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -1288,11 +1288,53 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MeinePlanetExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/MeinePlanetExtension" ]
+       ] ;
+       fhir:name [ fhir:v "MeinePlanetExtension" ] ;
+       fhir:description [ fhir:v "Dies ist eine Extension, um Angaben zum Planeten an eine Adresse hinzuzufügen" ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://gefyra.info/training/StructureDefinition/MyPatient> ;
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil> ;
+         fhir:reference [ fhir:v "StructureDefinition/MeinPatientenProfil" ]
+       ] ;
+       fhir:name [ fhir:v "MeinPatientenProfil" ] ;
+       fhir:description [ fhir:v "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MyPatient> ;
          fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
        ] ;
        fhir:name [ fhir:v "MyPatient" ] ;
@@ -1313,15 +1355,37 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://gefyra.info/training/Patient/PatientExample> ;
+         fhir:l <http://gefyra.info/simone/Patient/PatientBeispiel> ;
+         fhir:reference [ fhir:v "Patient/PatientBeispiel" ]
+       ] ;
+       fhir:name [ fhir:v "PatientBeispiel" ] ;
+       fhir:description [ fhir:v "Dies ist ein Beispielpatient." ] ;
+       fhir:example [
+         a fhir:Canonical ;
+         fhir:v "http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil"^^xsd:anyURI ;
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://gefyra.info/simone/Patient/PatientExample> ;
          fhir:reference [ fhir:v "Patient/PatientExample" ]
        ] ;
        fhir:name [ fhir:v "PatientExample" ] ;
        fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "http://gefyra.info/training/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:l <http://gefyra.info/training/StructureDefinition/MyPatient>
+         fhir:v "http://gefyra.info/simone/StructureDefinition/MyPatient"^^xsd:anyURI ;
+         fhir:l <http://gefyra.info/simone/StructureDefinition/MyPatient>
        ]
      ] ) ;
      fhir:page [

@@ -1,4 +1,4 @@
-# Home - v0.1.0
+# Home - v0.0.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://gefyra.info/training/ImplementationGuide/info.gefyra.training | *Version*:0.1.0 |
-| Draft as of 2026-02-09 | *Computable Name*:SchulungsIG |
+| *Official URL*:http://gefyra.info/simone/ImplementationGuide/info.gefyra.training | *Version*:0.0.1 |
+| Draft as of 2026-02-10 | *Computable Name*:SchulungsIG |
 
 # SchulungsIG
 
@@ -22,11 +22,11 @@ Feel free to modify this index page with your own awesome content!
 {
   "resourceType" : "ImplementationGuide",
   "id" : "info.gefyra.training",
-  "url" : "http://gefyra.info/training/ImplementationGuide/info.gefyra.training",
-  "version" : "0.1.0",
+  "url" : "http://gefyra.info/simone/ImplementationGuide/info.gefyra.training",
+  "version" : "0.0.1",
   "name" : "SchulungsIG",
   "status" : "draft",
-  "date" : "2026-02-09T13:05:27+00:00",
+  "date" : "2026-02-10T08:26:21+00:00",
   "publisher" : "Gefyra GmbH",
   "contact" : [
     {
@@ -195,7 +195,7 @@ Feel free to modify this index page with your own awesome content!
           },
           {
             "url" : "value",
-            "valueString" : "http://gefyra.info/training/history.html"
+            "valueString" : "http://gefyra.info/simone/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -524,7 +524,7 @@ Feel free to modify this index page with your own awesome content!
           },
           {
             "url" : "value",
-            "valueString" : "http://gefyra.info/training/history.html"
+            "valueString" : "http://gefyra.info/simone/history.html"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -730,6 +730,34 @@ Feel free to modify this index page with your own awesome content!
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/MeinePlanetExtension"
+        },
+        "name" : "MeinePlanetExtension",
+        "description" : "Dies ist eine Extension, um Angaben zum Planeten an eine Adresse hinzuzufügen",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/MeinPatientenProfil"
+        },
+        "name" : "MeinPatientenProfil",
+        "description" : "Die ist ein Patienten-Profil mit den Minimalanforderungen für Patientenstammdaten.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -748,11 +776,25 @@ Feel free to modify this index page with your own awesome content!
           }
         ],
         "reference" : {
+          "reference" : "Patient/PatientBeispiel"
+        },
+        "name" : "PatientBeispiel",
+        "description" : "Dies ist ein Beispielpatient.",
+        "exampleCanonical" : "http://gefyra.info/simone/StructureDefinition/MeinPatientenProfil"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Patient"
+          }
+        ],
+        "reference" : {
           "reference" : "Patient/PatientExample"
         },
         "name" : "PatientExample",
         "description" : "An example of a patient with a license to krill.",
-        "exampleCanonical" : "http://gefyra.info/training/StructureDefinition/MyPatient"
+        "exampleCanonical" : "http://gefyra.info/simone/StructureDefinition/MyPatient"
       }
     ],
     "page" : {

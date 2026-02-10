@@ -2,7 +2,7 @@
   "resourceType" : "Patient",
   "id" : "PatientExample",
   "meta" : {
-    "profile" : ["http://gefyra.info/training/StructureDefinition/MyPatient"]
+    "profile" : ["http://gefyra.info/simone/StructureDefinition/MyPatient"]
   },
   "text" : {
     "status" : "generated",

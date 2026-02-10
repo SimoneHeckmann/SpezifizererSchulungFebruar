@@ -1,4 +1,4 @@
-# MyPatient - v0.1.0
+# MyPatient - v0.0.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://gefyra.info/training/StructureDefinition/MyPatient | *Version*:0.1.0 |
-| Draft as of 2026-02-09 | *Computable Name*:MyPatient |
+| *Official URL*:http://gefyra.info/simone/StructureDefinition/MyPatient | *Version*:0.0.1 |
+| Draft as of 2026-02-10 | *Computable Name*:MyPatient |
 
  
 An example profile of the Patient resource. 
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](StructureDefinition-MyPatient.csv), [Exc
 {
   "resourceType" : "StructureDefinition",
   "id" : "MyPatient",
-  "url" : "http://gefyra.info/training/StructureDefinition/MyPatient",
-  "version" : "0.1.0",
+  "url" : "http://gefyra.info/simone/StructureDefinition/MyPatient",
+  "version" : "0.0.1",
   "name" : "MyPatient",
   "status" : "draft",
-  "date" : "2026-02-09T13:05:27+00:00",
+  "date" : "2026-02-10T08:26:21+00:00",
   "publisher" : "Gefyra GmbH",
   "contact" : [
     {
