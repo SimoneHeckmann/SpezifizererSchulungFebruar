@@ -64,13 +64,11 @@ Description: "Die ist ein Patienten-Profil mit den Minimalanforderungen für Pat
 * birthDate 0..1 MS 
   * ^short = "Geburtsdatum"
   * ^comment = "Ist ein Pflichtfeld weil..."
-* address only MeinAddressProfil  
-* contact.address only MeinAddressProfil
 * address 0.. MS
   * line 1.. MS
   * city MS
   * postalCode 1.. MS
-  * extension contains MeinePlanetExtension named planet 1..1 MS 
+  * extension contains PlanetUFP named planet 1..1 MS 
   * extension contains MeineQuadrantenExtension named quadrant 1..1 MS
 * extension contains MeineSpeziesExtension named spezies 1..* MS 
 * active 1.. MS 
